@@ -19,7 +19,10 @@
               <nav>
                 <div class="nav-wrapper red">
 
-                    <img src="images/logo.png" alt="Fenasp" width="50" height="50" />
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Fenasp" width="50" height="50" />
+                    </a>
+                    
                     <span class="slogan">Seu dinheiro seguro.</span>
 
                     <a href="#" data-activates="navegacao-mobile" class="button-collapse">
@@ -37,6 +40,8 @@
                     <li><a href="#">Promoções</a></li>
                   </ul>
                     
+                <p id="dataAtual" class="hide-on-med-and-down" >11 de Maio de 2015</p>
+                    
                 </div>
               </nav>
             </div>
@@ -46,10 +51,30 @@
             
             <section id="welcome-message">
                 <div class="row">
-                  <div class="col l10 offset-l1 s10 offset-s1">
+                  <div class="col l8 offset-l2 s8 offset-s2">
                     <div class="card-panel z-depth-1 red">
                       <span class="white-text">
-                          <p class="center">Bem-vindo ao Fenasp!</p>
+                          <p class="center">Acesse sua conta Fenasp:</p>
+                          
+                            <div class="row">
+                                 <div class="col l4 offset-l1 s5 offset-s1 input-field">
+                                    <input id="agencia" type="text"></input>
+                                    <label for="agencia">Agencia</label>
+                                 </div>
+                          
+                                 <div class="col l4 s5 input-field">
+                                    <input id="conta" type="text"></input>
+                                    <label for="conta">Conta</label>
+                                 </div>
+                        
+                                 <div class="col l2 s12">
+                                  <a class="btn waves-effect waves-light" href="conta.html" name="acessar">
+                                      Acessar
+                                    <i class="mdi-content-send left"></i>
+                                  </a>
+                                </div>
+                        
+                            </div>                     
                       </span>
                     </div>
                   </div>

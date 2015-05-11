@@ -2,6 +2,16 @@ html {
     font: 16px verdana;
 }
 
+header, main, footer {
+    padding-left: 240px;
+}
+
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+      padding-left: 0;
+    }
+}
+
 body {
     display: flex;
     min-height: 100vh;
@@ -35,4 +45,22 @@ header .nav-wrapper {
 
 #welcome-message {
     margin-top: 0.75rem;
+}
+
+#dataAtual {
+    position: fixed;
+    top: -10px;
+    left: 22%;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+/* label color */
+.input-field label {
+    color: #FFF;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: #FFF;
 }

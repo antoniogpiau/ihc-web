@@ -1,5 +1,5 @@
 html {
-    font: 16px verdana;
+    font-size: 16px;
 }
 
 header, main, footer {
@@ -12,21 +12,10 @@ header, main, footer {
     }
 }
 
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-}
-
-main {
-    background-color: #EAEAEC;
-    flex: 1 0 auto;
-    border-top: 2px solid #FFFFFF;
-    border-bottom: 2px solid #FFFFFF;
-}
-
-footer {
-    font-size: 0.8rem;
+header .nav-wrapper,
+header .nav-wrapper i {
+    height: 95px;
+    line-height: 95px;
 }
 
 header .nav-wrapper {
@@ -47,12 +36,14 @@ header .nav-wrapper {
     margin-top: 0.75rem;
 }
 
-#dataAtual {
-    position: fixed;
-    top: -10px;
-    left: 22%;
-    font-style: italic;
-    font-size: 0.8rem;
+#navigationMenu #slide-out .logo {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 70px;
+}
+
+#navigationMenu #slide-out .logo:hover {
+    background-color: white;
 }
 
 /* label color */

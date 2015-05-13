@@ -1,26 +1,32 @@
 html {
     font-size: 16px;
-}
-
-header, main, footer {
-    padding-left: 240px;
-}
-
-@media only screen and (max-width : 992px) {
-    header, main, footer {
-      padding-left: 0;
-    }
-}
-
-header .nav-wrapper,
-header .nav-wrapper i {
-    height: 95px;
-    line-height: 95px;
+    background-color: #e0f7fa;
 }
 
 header .nav-wrapper {
-    padding: 0 0.75rem;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
 }
+
+footer {
+border-bottom-right-radius: 20px;
+border-bottom-left-radius: 20px;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 22px;
+    background-color: #FFFFFF;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
 
 .slogan {
     font-style: italic;
@@ -36,6 +42,9 @@ header .nav-wrapper {
     margin-top: 0.75rem;
 }
 
+#navigationMenu .card-content .divider {
+  background-color: black; }
+
 #navigationMenu #slide-out .logo {
     margin-top: 5%;
     margin-bottom: 5%;
@@ -44,6 +53,21 @@ header .nav-wrapper {
 
 #navigationMenu #slide-out .logo:hover {
     background-color: white;
+}
+
+.item-menu{
+    padding-bottom: 5px;  
+    padding-top: 20px;
+}
+
+#navigationMenu .card-content:first-child {
+    padding-top: 5px;
+}
+
+main .card-panel {
+    margin-right: 40px;
+    margin-top: 40px;
+    border-radius: 20px;
 }
 
 /* label color */

@@ -4791,7 +4791,7 @@ span.badge {
 
 @media only screen and (min-width : 993px) {
   .container {
-    width: 90%; } }
+    width: 75%; } }
 
 .container .row {
   margin-left: -0.75rem;
@@ -5354,7 +5354,9 @@ small {
   .card .card-title {
     color: #fff;
     font-size: 24px;
-    font-weight: 300; }
+    font-weight: 300; 
+  }
+    
     .card .card-title.activator {
       cursor: pointer; }
   .card.small, .card.medium, .card.large {
@@ -5402,13 +5404,14 @@ small {
       left: 0;
       padding: 20px; }
   .card .card-content {
-    padding: 20px;
     border-radius: 0 0 2px 2px; }
     .card .card-content p {
       margin: 0;
       color: inherit; }
     .card .card-content .card-title {
-      line-height: 48px; }
+      line-height: 48px; 
+      padding-left: 20px;
+    }
   .card .card-action {
     border-top: 1px solid rgba(160, 160, 160, 0.2);
     padding: 20px; }

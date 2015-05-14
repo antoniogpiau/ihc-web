@@ -3,30 +3,19 @@ html {
     background-color: #e0f7fa;
 }
 
-header .nav-wrapper {
-border-top-left-radius: 20px;
-border-top-right-radius: 20px;
-}
-
-footer {
-border-bottom-right-radius: 20px;
-border-bottom-left-radius: 20px;
-}
-
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    border: 2px solid black;
-    border-radius: 22px;
-    background-color: #FFFFFF;
+    background-color: white;
     padding-left: 0px;
     padding-right: 0px;
   }
 
-  main {
+main {
     flex: 1 0 auto;
-  }
+      background-color: white;
+}
 
 .slogan {
     font-style: italic;
@@ -38,8 +27,19 @@ body {
     text-decoration: underline;
 }
 
-#welcome-message {
-    margin-top: 0.75rem;
+.texto-inicial {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.texto-inicial-menor {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-size: 0.9rem;
+    font-style: italic;
+    border-bottom: 2px solid black;
 }
 
 #navigationMenu .card-content .divider {
@@ -56,18 +56,35 @@ body {
 }
 
 .item-menu{
-    padding-bottom: 5px;  
-    padding-top: 20px;
+    padding: 15px;
+    box-shadow: 0px 0px 4px #000;
+    color: #000;
+}
+
+.item-menu:hover{  
+    box-shadow: inset 0px 0px 10px #000;
+}
+
+#navigationMenu{
+    padding-left: 5px;
+}
+
+#navigationMenu .card{
+    box-shadow: inset 0px 0px 10px #000000;
+}
+
+.card{
+    margin-left: 10px;
 }
 
 #navigationMenu .card-content:first-child {
     padding-top: 5px;
 }
 
-main .card-panel {
-    margin-right: 40px;
-    margin-top: 40px;
-    border-radius: 20px;
+.card .card-content .card-text{
+    border-top: 3px solid rgba(160, 160, 160, 0.2);
+    padding: 20px;
+    background-color: grey;
 }
 
 /* label color */

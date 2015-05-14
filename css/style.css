@@ -43,6 +43,20 @@ main {
     width: 100%;
 }
 
+.agencia{
+    position: absolute;
+    left: 28%; 
+    top:-10px; 
+    font-size: 1.2rem;
+}
+
+.conta{
+    position: absolute; 
+    left: 28%; 
+    top:10px; 
+    font-size: 1.2rem;
+}
+
 #navigationMenu .card-content .divider {
   background-color: black; }
 

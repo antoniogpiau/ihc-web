@@ -29,17 +29,18 @@ main {
 
 .texto-inicial {
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 3.6%;
     font-size: 1.5rem;
     font-weight: bold;
 }
 
 .texto-inicial-menor {
     margin-bottom: 20px;
-    margin-left: 10px;
+    margin-left: 3.6%;
     font-size: 0.9rem;
     font-style: italic;
     border-bottom: 2px solid black;
+    width: 100%;
 }
 
 #navigationMenu .card-content .divider {
@@ -71,11 +72,18 @@ main {
 
 #navigationMenu .card{
     box-shadow: inset 0px 0px 10px #000000;
+    margin-top: 18%;
+    width: 110%;
+    margin-left: 10px;
+    min-width: 130px;
+    text-align: center;
 }
 
 .card{
-    margin-left: 10px;
+    margin-left: 8%;
+    width: 100%;
 }
+
 
 #navigationMenu .card-content:first-child {
     padding-top: 5px;

@@ -9,7 +9,7 @@
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link href="favicon.ico" rel="icon" type="image/x-icon" />
         
-        <title>Digital Capital Bank</title>
+        <title>Realize uma transferência</title>
     </head>
     
     <body class="container z-depth-5">   
@@ -72,8 +72,7 @@
             </header>
         
             <main>
-                       
-                <div class="row">
+                               <div class="row">
                     <aside id="navigationMenu">
                
                     <div class="col s4 m4 l2 hide-on-med-and-down">
@@ -82,9 +81,9 @@
 					<nav class="navbar navbar-default" role="navigation">
 						<div class="collapse navbar-collapse navbar-ex1-collapse">
 						<ul class="nav navbar-nav">
-							<li class="active"><a href="#">Home</a></li>
+							<li ><a href="conta.html">Home</a></li>
 							<li><a href="extrato.html">Extratos</a></li>
-							<li><a href="transferencia.html">Transferências</a></li>
+							<li class="active"><a href="transferencia.html">Transferências</a></li>
 							<li><a href='pagamento.html'><span>Pagamentos</span></a></li>
 							<li><a href='#'><span>Investimentos</span></a></li>
 							<li><a href='/beneficiados.html'><span>Cadastrar Beneficiados</span></a></li>
@@ -134,65 +133,49 @@
              <div class="col s10 m10 l9">
               
                 <div class="texto-inicial">
-                    Olá, Ricardo Godoy :)
+                    Realizar Transferência
                 </div>
                  
                  <div class="texto-inicial-menor">
-                    Acessado pela última vez dia 12/05/2015 às 20:45.
+                    Transfira dinheiro de sua conta corrente ou poupança para seus beneficiados.
                  </div>
-                 
-                <div class="row">
-                    <div class="col s12 m6 l6">
-                      <div class="card blue-grey darken-1 z-depth-3">
-                        <div class="card-content white-text">
-                          <div class="card-title">Card Title</div>
-                            <div class="card-text">
-                                <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
-                            </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div class="col s12 m6 l6">
-                      <div class="card blue-grey darken-1 z-depth-3">
-                        <div class="card-content white-text">
-                          <div class="card-title">Card Title</div>
-                            <div class="card-text">
-                                <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
-                            </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div class="col s12 m6 l6">
-                      <div class="card blue-grey darken-1 z-depth-3">
-                        <div class="card-content white-text">
-                          <div class="card-title">Card Title</div>
-                            <div class="card-text">
-                                <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
-                            </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                   <div class="col s12 m6 l6">
-                      <div class="card blue-grey darken-1 z-depth-3">
-                        <div class="card-content white-text">
-                          <div class="card-title">Card Title</div>
-                            <div class="card-text">
-                                <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
-                            </div>
-                        </div>
-                      </div>
-                    </div>   
-                    
-                </div>   
-            </div> 
+				 <h6>Conta de origem</h6>
+				 <div class="localizador"> 
+                
+					<select class="browser-default">
+						<option value="" disabled selected>Escolha aqui</option>
+						<option value="1">Conta Corrente 9401902</option>
+						<option value="2">Poupança 995649392948</option>
+					</select>
+				</div>
+				<h6>Conta de destino</h6>
+				 <div class="localizador"> 
+                
+					<select class="browser-default">
+						<option value="" disabled selected>Escolha aqui</option>
+						<option value="1">Minha Conta Corrente 9401902</option>
+						<option value="2">Minha Poupança 995649392948</option>
+						<option value="3">Antonio Augusto</option>
+						<option value="4">Felipe Lopes</option>
+						<option value="5">Lucas Quadrado</option>
+						<option value="5">Saulo Ferreira</option>
+					</select>
+				</div>
+				<h6>Data de Transferência</h6>
+				 <div class="localizador"> 
+                <div class="tipo1">
+					<input type="date" class="datepicker"><a>Hoje</a>
+					<br> <br><form action="transferencia2.html">
+								<input type="submit" value="Verificar Dados">
+							</form>
+				</div>
+				</div>
+				
+				
+				
+				
         </div>
+		
                         
     </main>
            

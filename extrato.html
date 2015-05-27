@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        
+        <link rel="stylesheet" type="text/css" href="css/materialize.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link href="favicon.ico" rel="icon" type="image/x-icon" />
+        
+        <title>Extratos</title>
+    </head>
+    
+    <body class="container z-depth-5">   
+        
+            <header>
+                <nav>
+                    <div class="nav-wrapper light-blue accent-4 z-depth-1">
+
+                     <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+
+                    <a class="brand-logo hide-on-med-and-down" href="#">
+                        Capital Bank
+                    </a>
+                        
+                      <ul id="navegacao-desktop" class="right">
+                          
+                        <div class="agencia hide-on-med-and-down">
+                            Agência: 6193
+                        </div>
+                          
+                        <div class="conta hide-on-med-and-down">
+                            Conta: 10025-7
+                        </div>
+                          
+                        <li>
+                            <a class="tooltipped" data-position="bottom" data-delay="20" data-tooltip="Alterar fonte" href="#">
+                            <i class="mdi-editor-format-color-text"></i></a>
+                        </li>
+
+                        <li><a class="tooltipped" data-position="bottom" data-delay="20" data-tooltip="Zoom" href="#">
+                            <i class="mdi-action-visibility"></i></a>
+                        </li>
+                          
+                        <li><a class="tooltipped" data-position="bottom" data-delay="20" data-tooltip="Trocar idioma" href="#">
+                            <i class="mdi-action-language"></i></a>
+                        </li>
+                          
+                        <li>
+                            <a class="dropdown-button" data-beloworigin="true" href="#" data-activates="user-options">
+                                Ricardo Godoy
+                                <i class="mdi-navigation-arrow-drop-down right"></i>
+                            </a>
+                        </li>
+
+                      </ul>
+
+                    <ul id="user-options" class="dropdown-content z-depth-2">
+                      <li><div class="divider"></div>
+                          <a href="#!">Dados pessoais</a></li>
+
+                      <li><div class="divider"></div>
+                          <a href="#!">Alterar senha</a></li>
+                        
+                      <li><div class="divider"></div>
+                          <a href="index.html">Sair</a></li>
+                    </ul> 
+
+                    </div>
+                  </nav>
+            </header>
+        
+            <main>
+                               <div class="row">
+                    <aside id="navigationMenu">
+               
+                    <div class="col s4 m4 l2 hide-on-med-and-down">
+                     
+                          <div id='cssmenu'>
+					<nav class="navbar navbar-default" role="navigation">
+						<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav">
+							<li ><a href="conta.html">Home</a></li>
+							<li class="active"><a href="extrato.html">Extratos</a></li>
+							<li><a href="transferencia.html">Transferências</a></li>
+							<li><a href='pagamento.html'><span>Pagamentos</span></a></li>
+							<li><a href='#'><span>Investimentos</span></a></li>
+							<li><a href='/beneficiados.html'><span>Cadastrar Beneficiados</span></a></li>
+							<li><a href='#'><span>Marcar Viagem</span></a></li></ul>
+						</div><!-- /.navbar-collapse -->
+					</nav>
+						</div>
+                          
+                        
+                
+            </div>  
+                    
+              <ul id="slide-out" class="side-nav">
+                <li class="logo">
+                    <a href="#">
+                        <img src="images/logo.jpg" alt="Fenasp" width="200" height="70" /> 
+                    </a>
+                </li>
+
+                <div class="divider"></div>
+
+                <li>
+                    <a href="#!">Pagamentos</a>
+                    <div class="divider"></div>
+                </li>
+
+                <li>
+                    <a href="#!">Conta Corrente</a>
+                    <div class="divider"></div>
+                </li>
+
+
+                <li>
+                    <a href="#!">Poupança</a>
+                    <div class="divider"></div>
+                </li>
+
+                <li>
+                    <a href="#!">Transferências</a>
+                    <div class="divider"></div>
+                </li>
+
+              </ul>
+     
+             </aside>
+   
+             <div class="col s10 m10 l9">
+              
+                <div class="texto-inicial">
+                    Meus Extratos
+                </div>
+                 
+                 <div class="texto-inicial-menor">
+                    Confira seus extratos dada uma data.
+                 </div>
+				 <h6>Tipo</h6>
+				 <div class="localizador"> 
+                
+					<select class="browser-default">
+						<option value="" disabled selected>Escolha aqui</option>
+						<option value="1">Conta Corrente</option>
+						<option value="2">Poupança</option>
+						<option value="3">Cartão de Crédito</option>
+					</select>
+				</div>
+				<h6>Data Início</h6>
+				 <div class="localizador"> 
+                <div class="tipo1">
+					<input type="date" class="datepicker">
+				</div>
+				</div>
+				<h6>Data Término</h6>
+				 <div class="localizador"> 
+                
+					<input type="date" class="datepicker">
+					<br> <br><button type="button">Filtrar</button>
+				</div>
+				
+				
+				
+				<br>
+				<div id="conteudo">
+				<hr>
+				
+
+		<table cellspacing="0" cellpadding="1" border="1" width="98%" margin-left="7px">
+<tbody><tr class="rowStyle01">
+<td class="TableTitle1" width="10%"><b>Data</b></td><td class="TableTitle1" width="40%"><b>Conta corrente</b></td><td class="TableTitle1" width="10%"></td><td class="TableTitle1" width="15%"></td><td align="right" width="25%"><b>Valor</b></td>
+</tr>
+<tr class="Line1">
+<td>15/05</td><td>Saldo anterior</td><td></td><td></td><td align="right"><font class="Debito">228,96 D</font></td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top">18/05</td><td valign="top">COMP VISA ELECTRON    </td><td valign="top">1352</td><td valign="top">0486972</td><td valign="top" align="right"><font class="Debito">15,90 D</font></td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top">1352</td><td valign="top">0623822</td><td valign="top" align="right"><font class="Debito">19,90 D</font></td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top">1352</td><td valign="top">0635125</td><td valign="top" align="right"><font class="Debito">36,00 D</font></td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top">1352</td><td valign="top">0637441</td><td valign="top" align="right"><font class="Debito">17,25 D</font></td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top">1352</td><td valign="top">0914525</td><td valign="top" align="right"><font class="Debito">6,80 D</font></td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top"></td><td valign="top">Saldo disponível</td><td valign="top"></td><td valign="top"></td><td valign="top" align="right"><font class="Debito">324,81 D</font></td>
+</tr>
+<tr class="rowStyle02">
+<td width="10%" valign="top">19/05</td><td valign="top">COMP VISA ELECTRON    </td><td valign="top">1352</td><td valign="top">0006810</td><td valign="top" align="right"><font class="Debito">28,30 D</font></td>
+</tr>
+<tr class="rowStyle02">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top">1352</td><td valign="top">0159224</td><td valign="top" align="right"><font class="Debito">20,88 D</font></td>
+</tr>
+<tr class="rowStyle02">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top">1352</td><td valign="top">0324229</td><td valign="top" align="right"><font class="Debito">6,30 D</font></td>
+</tr>
+<tr class="rowStyle02">
+<td width="10%" valign="top"></td><td valign="top">Saldo disponível</td><td valign="top"></td><td valign="top"></td><td valign="top" align="right"><font class="Debito">380,29 D</font></td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top">20/05</td><td valign="top">TRANSF DA CTA SAL     </td><td valign="top">1352</td><td valign="top">0083292</td><td valign="top" align="right"><font class="Credito">1.372,50 C</font></td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top">1352</td><td valign="top">0540727</td><td valign="top" align="right"><font class="Debito">5,70 D</font></td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top">1352</td><td valign="top">0710165</td><td valign="top" align="right"><font class="Debito">14,80 D</font></td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top">1352</td><td valign="top">0737556</td><td valign="top" align="right"><font class="Debito">6,50 D</font></td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top">1352</td><td valign="top">0941450</td><td valign="top" align="right"><font class="Debito">8,00 D</font></td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top"></td><td valign="top">Saldo disponível</td><td valign="top"></td><td valign="top"></td><td valign="top" align="right"><font class="Credito">957,21 C</font></td>
+</tr>
+<tr class="rowStyle02">
+<td width="10%" valign="top">21/05</td><td valign="top">COMP VISA ELECTRON    </td><td valign="top">1352</td><td valign="top">0559649</td><td valign="top" align="right"><font class="Debito">8,80 D</font></td>
+</tr>
+<tr class="rowStyle02">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top">1352</td><td valign="top">0674228</td><td valign="top" align="right"><font class="Debito">17,90 D</font></td>
+</tr>
+<tr class="rowStyle02">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top">1352</td><td valign="top">0767545</td><td valign="top" align="right"><font class="Debito">12,00 D</font></td>
+</tr>
+<tr class="rowStyle02">
+<td width="10%" valign="top"></td><td valign="top">Saldo disponível</td><td valign="top"></td><td valign="top"></td><td valign="top" align="right"><font class="Credito">918,51 C</font></td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top">22/05</td><td valign="top">COMP VISA ELECTRON    </td><td valign="top">1352</td><td valign="top">0020794</td><td valign="top" align="right"><font class="Debito">15,30 D</font></td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top">1352</td><td valign="top">0047933</td><td valign="top" align="right"><font class="Debito">3,30 D</font></td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top">1352</td><td valign="top">0820950</td><td valign="top" align="right"><font class="Debito">17,80 D</font></td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top"></td><td valign="top">Saldo disponível</td><td valign="top"></td><td valign="top"></td><td valign="top" align="right"><font class="Credito">882,11 C</font></td>
+</tr>
+<tr class="rowStyle02">
+<td width="10%" valign="top">25/05</td><td valign="top">COMP VISA ELECTRON    </td><td valign="top">0000</td><td valign="top">0224046</td><td valign="top" align="right"><font class="Debito">16,63 D</font></td>
+</tr>
+<tr class="rowStyle02">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top">0000</td><td valign="top">0521933</td><td valign="top" align="right"><font class="Debito">18,35 D</font></td>
+</tr>
+<tr class="rowStyle02">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top">0000</td><td valign="top">0593088</td><td valign="top" align="right"><font class="Debito">11,54 D</font></td>
+</tr>
+<tr class="rowStyle02">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top">0000</td><td valign="top">0766210</td><td valign="top" align="right"><font class="Debito">31,57 D</font></td>
+</tr>
+<tr class="rowStyle02">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top">0000</td><td valign="top">0988283</td><td valign="top" align="right"><font class="Debito">55,11 D</font></td>
+</tr>
+</tbody></table>
+</div>
+		
+        </div>
+		
+                        
+    </main>
+           
+        <footer class="page-footer light-blue accent-4">
+        
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s6">
+                  
+                <aside class="grey-text text-lighten-2">
+                    <b>Ouvidoria:</b> 6655-4400 <i class="small mdi-communication-call"></i>  
+                </aside>
+                  
+              </div>
+                
+              <div class="links-uteis col l4 offset-l2 s4 offset-s2">
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Sobre nós</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+            
+          <div class="footer-copyright">
+            <div class="container">
+            © 2015 Projeto IHC
+            <a class="grey-text text-lighten-4 right" href="#!">Mapa do site <i class="small mdi-maps-place"></i></a>
+            </div>
+          </div>
+           
+        </footer>
+                
+            <script src="js/jquery-2.1.4.min.js"></script>
+            <script src="js/materialize.min.js"></script>
+            <script src="js/script.js"></script>
+    </body>
+</html>

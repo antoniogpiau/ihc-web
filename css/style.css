@@ -1,6 +1,6 @@
 html {
     font-size: 16px;
-    background-color: #e0f7fa;
+    background-color: #E7EAEA;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
     padding-right: 0px;
   }
 
-main {
+main {                      
     flex: 1 0 auto;
       background-color: white;
 }
@@ -117,4 +117,9 @@ main {
 /* label focus color */
 .input-field input[type=text]:focus + label {
     color: #FFF;
+}
+
+.logo{
+padding-top: 5px;
+padding-left: 15px;
 }

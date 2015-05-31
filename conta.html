@@ -10,6 +10,7 @@
         <link href="favicon.ico" rel="icon" type="image/x-icon" />
         
         <title>Digital Capital Bank</title>
+		
     </head>
     
     <body class="container z-depth-5">   
@@ -21,7 +22,7 @@
                      <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 
                     <a class="brand-logo hide-on-med-and-down" href="#">
-                        Capital Bank
+                        <img src="logo.jpg" height="35%" width="35%" class="logo">
                     </a>
                         
                       <ul id="navegacao-desktop" class="right">
@@ -35,20 +36,20 @@
                         </div>
                           
                         <li>
-                            <a class="tooltipped" data-position="bottom" data-delay="20" data-tooltip="Alterar fonte" href="#">
+                            <a class="tooltipped" id="adic" data-position="bottom" data-delay="20" data-tooltip="Alterar fonte" href="#">
                             <i class="mdi-editor-format-color-text"></i></a>
                         </li>
 
-                        <li><a class="tooltipped" data-position="bottom" data-delay="20" data-tooltip="Zoom" href="#">
+                        <li><a class="tooltipped" id="adic" data-position="bottom" data-delay="20" data-tooltip="Zoom" href="#">
                             <i class="mdi-action-visibility"></i></a>
                         </li>
                           
-                        <li><a class="tooltipped" data-position="bottom" data-delay="20" data-tooltip="Trocar idioma" href="#">
+                        <li><a class="tooltipped" id="adic" data-position="bottom" data-delay="20" data-tooltip="Trocar idioma" href="#">
                             <i class="mdi-action-language"></i></a>
                         </li>
                           
                         <li>
-                            <a class="dropdown-button" data-beloworigin="true" href="#" data-activates="user-options">
+                            <a class="dropdown-button" id="adic" data-beloworigin="true" href="#" data-activates="user-options">
                                 Ricardo Godoy
                                 <i class="mdi-navigation-arrow-drop-down right"></i>
                             </a>
@@ -82,13 +83,13 @@
 					<nav class="navbar navbar-default" role="navigation">
 						<div class="collapse navbar-collapse navbar-ex1-collapse">
 						<ul class="nav navbar-nav">
-							<li class="active"><a href="#">Home</a></li>
-							<li><a href="extrato.html">Extratos</a></li>
-							<li><a href="transferencia.html">Transferências</a></li>
-							<li><a href='pagamento.html'><span>Pagamentos</span></a></li>
-							<li><a href='#'><span>Investimentos</span></a></li>
-							<li><a href='/beneficiados.html'><span>Cadastrar Beneficiados</span></a></li>
-							<li><a href='#'><span>Marcar Viagem</span></a></li></ul>
+							<li class="active"><a href="#"><img src="myaccount.png" height="10%" width="10%">&nbsp &nbspHome</a></li>
+							<li><a href="extrato.html"><img src="credit_card.png" height="10%" width="10%">&nbsp &nbspExtratos</a></li>
+							<li><a href="transferencia.html"><img src="transferencia.png" height="10%" width="10%">&nbsp &nbspTransferências</a></li>
+							<li><a href='pagamento.html'><img src="cifrao.png" height="10%" width="10%">&nbsp &nbsp <span>Pagamentos</span></a></li>
+							<li><a href='investimentos.html'><img src="money_bag.png" height="10%" width="10%">&nbsp &nbsp <span>Investimentos</span></a></li>
+							<li><a href='beneficiados.html'><img src="plus.png" height="10%" width="10%">&nbsp &nbsp <span>Cadastrar Beneficiados</span></a></li>
+							<li><a href='viagem.html'><img src="viagens.png" height="10%" width="10%">&nbsp &nbsp <span>Marcar Viagem</span></a></li></ul>
 						</div><!-- /.navbar-collapse -->
 					</nav>
 						</div>
@@ -100,7 +101,7 @@
               <ul id="slide-out" class="side-nav">
                 <li class="logo">
                     <a href="#">
-                        <img src="images/logo.jpg" alt="Fenasp" width="200" height="70" /> 
+                        <img src="logo.jpg" height="35%" width="35%" class="logo">
                     </a>
                 </li>
 
@@ -142,49 +143,73 @@
                  </div>
                  
                 <div class="row">
-                    <div class="col s12 m6 l6">
+                    <div class="col s12 m4 16">
                       <div class="card blue-grey darken-1 z-depth-3">
                         <div class="card-content white-text">
-                          <div class="card-title">Card Title</div>
+                          <div class="card-title">Sua Conta</div>
                             <div class="card-text">
-                                <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
+                                <p><b>Saldo Disponível: </b> R$ 1059,04 <br>
+								<b>Limite Cheque Especial: </b> R$ 750,00.*<br>
+								<b>Crédito Parcelado: </b> R$ 15.000,00.**<br>
+								<b>Último Uso: </b> 17 horas atrás. <br>
+								<b>Tipo de Conta: </b> Advanced. <hr>
+								<h4>* Informações sujeitas a alterações<br>** Parcelado em até 10x</h4>
+								
+								
+								
+								</p>
                             </div>
                         </div>
                       </div>
                     </div>
                     
-                    <div class="col s12 m6 l6">
+                    <div class="col s12 m5 16">
                       <div class="card blue-grey darken-1 z-depth-3">
                         <div class="card-content white-text">
-                          <div class="card-title">Card Title</div>
+                          <div class="card-title">Crédito Consignado</div>
                             <div class="card-text">
-                                <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
+                                <p>Quando falta um pouquinho para realizar seus sonhos, pode contar com o Crédito Consignado da Capital Bank.<br>
+								É o jeito mais rápido de conseguir crédito, com os melhores prazos e taxas imperdíveis.<br><br>Mais Informações na <a href="http://maps.google.com">agência mais próxima</a> de você!</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+					
+					<div id='cssmenu2'>
+					<nav class="navbar navbar-default" role="navigation">
+						<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav">
+							<li><a href="#">Consórcio</a></li>
+							<li><a href="#">Empréstimo</a></li>
+							<li><a href="#">Seguro de Vida</a></li>
+							<li><a href='#'><span>Solicitar Cartão</span></a></li>
+							<li><a href='#'><span>Previdência</span></a></li>
+							<li><a href='#'><span>Mensagens</span></a></li>
+							<li><a href='#'><span>Simulação</span></a></li></ul>
+						</div><!-- /.navbar-collapse -->
+					</nav>
+					</div>
+                    
+                    <div class="col s12 m4 16">
+                      <div class="card blue-grey darken-1 z-depth-3">
+                        <div class="card-content white-text">
+                          <div class="card-title">Ofertas Para Você</div>
+                            <div class="card-text">
+                                <p>Somente até o dia 10/06, você conta com taxas reduzidas ao contratar a Antecipação de sua Restituição com o Capital Bank. Não Perca! <hr>
+								Capital Bank oferece cartão de crédito com serviços incríveis e vantangens incomparáveis!
+								</p>
                             </div>
                         </div>
                       </div>
                     </div>
                     
-                    <div class="col s12 m6 l6">
+                   <div class="col s12 m5 16">
                       <div class="card blue-grey darken-1 z-depth-3">
                         <div class="card-content white-text">
-                          <div class="card-title">Card Title</div>
+                          <div class="card-title">Gastos nos últimos 30 dias</div>
                             <div class="card-text">
-                                <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
-                            </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                   <div class="col s12 m6 l6">
-                      <div class="card blue-grey darken-1 z-depth-3">
-                        <div class="card-content white-text">
-                          <div class="card-title">Card Title</div>
-                            <div class="card-text">
-                                <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
+                                <img src="banco.jpg" height="85%" width="85%"><br>
+								<p>Confira<a href="extrato.html"> aqui</a> o seu extrato.</P>
                             </div>
                         </div>
                       </div>

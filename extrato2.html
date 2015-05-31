@@ -9,7 +9,7 @@
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link href="favicon.ico" rel="icon" type="image/x-icon" />
         
-        <title>Realize um Pagamento</title>
+        <title>Extratos</title>
     </head>
     
     <body class="container z-depth-5">   
@@ -80,11 +80,11 @@
                           <div id='cssmenu'>
 					<nav class="navbar navbar-default" role="navigation">
 						<div class="collapse navbar-collapse navbar-ex1-collapse">
-						<ul class="nav navbar-nav">
+								<ul class="nav navbar-nav">
 							<li><a href="conta.html"><img src="myaccount.png" height="10%" width="10%">&nbsp &nbspHome</a></li>
-							<li><a href="extrato.html"><img src="credit_card.png" height="10%" width="10%">&nbsp &nbspExtratos</a></li>
+							<li class="active"><a href="extrato.html"><img src="credit_card.png" height="10%" width="10%">&nbsp &nbspExtratos</a></li>
 							<li><a href="transferencia.html"><img src="transferencia.png" height="10%" width="10%">&nbsp &nbspTransferências</a></li>
-							<li class="active"><a href='pagamento.html'><img src="cifrao.png" height="10%" width="10%">&nbsp &nbsp <span>Pagamentos</span></a></li>
+							<li><a href='pagamento.html'><img src="cifrao.png" height="10%" width="10%">&nbsp &nbsp <span>Pagamentos</span></a></li>
 							<li><a href='investimentos.html'><img src="money_bag.png" height="10%" width="10%">&nbsp &nbsp <span>Investimentos</span></a></li>
 							<li><a href='beneficiados.html'><img src="plus.png" height="10%" width="10%">&nbsp &nbsp <span>Cadastrar Beneficiados</span></a></li>
 							<li><a href='viagem.html'><img src="viagens.png" height="10%" width="10%">&nbsp &nbsp <span>Marcar Viagem</span></a></li></ul>
@@ -99,7 +99,7 @@
               <ul id="slide-out" class="side-nav">
                 <li class="logo">
                     <a href="#">
-                        <img src="images/logo.jpg" alt="Fenasp" width="200" height="70" /> 
+                       <img src="logo.jpg" height="35%" width="35%" class="logo">
                     </a>
                 </li>
 
@@ -133,49 +133,141 @@
              <div class="col s10 m10 l9">
               
                 <div class="texto-inicial">
-                    Realizar Pagamento
+                    Meus Extratos
                 </div>
                  
                  <div class="texto-inicial-menor">
-                    Escreva o número de um código de barras e realize seu pagamento.
+                    Confira seus extratos dada uma data.
                  </div>
-				 <h6>Código de barras</h6>
-				 <div class="localizador"> 
-				 <form >
-								<input type="text">
-							</form>
-				 
-                 
-				</div>
-				 <h6>Conta de origem</h6>
+				 <h6>Tipo</h6>
 				 <div class="localizador"> 
                 
 					<select class="browser-default">
 						<option value="" disabled selected>Escolha aqui</option>
 						<option value="1">Conta Corrente</option>
 						<option value="2">Poupança</option>
+						<option value="3">Cartão de Crédito</option>
 					</select>
 				</div>
-				<h6>Data de Transferência</h6>
+				<h6>Data Início</h6>
 				 <div class="localizador"> 
                 <div class="tipo1">
-					<input type="date" class="datepicker"><a>Hoje</a>
-					<br> <br><form action="pagamento2.html">
-								<input type="submit" value="Revisar Dados">
-							</form>
+					<input type="date" class="datepicker">
 				</div>
+				</div>
+				<h6>Data Término</h6>
+				 <div class="localizador"> 
+                
+					<input type="date" class="datepicker">
+					<br> <br><button type="button">Filtrar</button>
 				</div>
 				
 				
 				
 				<br>
-				
-		
-		</div>
-				
+				<div id="conteudo">
+				<hr>
 				
 
-		</div>
+		<table cellspacing="0" cellpadding="1" border="1" width="98%" margin-left="7px">
+<tbody><tr class="rowStyle01">
+<td class="TableTitle1" width="10%"><b>Data</b></td>
+<td class="TableTitle1" width="40%"><b>Conta corrente</b></td
+<td align="right" width="50%"><b>Valor</b></td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top">18/05</td><td valign="top">COMP VISA ELECTRON    </td><td valign="top" align="right"> 15,90 D </td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top" align="right"> 19,90 D </td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top" align="right"> 36,00 D </td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top" align="right"> 17,25 D </td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top" align="right"> 6,80 D </td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top"></td><td valign="top">Saldo</td><td valign="top" align="right"> 324,81 D </td>
+</tr>
+<tr class="rowStyle02">
+<td width="10%" valign="top">19/05</td><td valign="top">COMP VISA ELECTRON    </td><td valign="top" align="right"> 28,30 D </td>
+</tr>
+<tr class="rowStyle02">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top" align="right"> 20,88 D </td>
+</tr>
+<tr class="rowStyle02">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top" align="right"> 6,30 D </td>
+</tr>
+<tr class="rowStyle02">
+<td width="10%" valign="top"></td><td valign="top">Saldo</td><td valign="top" align="right"> 380,29 D </td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top">20/05</td><td valign="top">TRANSF DA CTA SAL     </td><td valign="top" align="right"> 1.372,50 C </td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top" align="right"> 5,70 D </td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top" align="right"> 14,80 D </td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top" align="right"> 6,50 D </td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top" align="right"> 8,00 D </td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top"></td><td valign="top">Saldo</td><td valign="top" align="right"> 957,21 C </td>
+</tr>
+<tr class="rowStyle02">
+<td width="10%" valign="top">21/05</td><td valign="top">COMP VISA ELECTRON    </td><td valign="top" align="right"> 8,80 D </td>
+</tr>
+<tr class="rowStyle02">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top" align="right"> 17,90 D </td>
+</tr>
+<tr class="rowStyle02">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top" align="right"> 12,00 D </td>
+</tr>
+<tr class="rowStyle02">
+<td width="10%" valign="top"></td><td valign="top">Saldo</td><td valign="top" align="right"> 918,51 C </td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top">22/05</td><td valign="top">COMP VISA ELECTRON    </td><td valign="top" align="right"> 15,30 D </td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top" align="right"> 3,30 D </td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top" align="right"> 17,80 D </td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top"></td><td valign="top">Saldo</td><td valign="top" align="right"> 882,11 C </td>
+</tr>
+<tr class="rowStyle02">
+<td width="10%" valign="top">25/05</td><td valign="top">COMP VISA ELECTRON    </td><td valign="top" align="right"> 16,63 D </td>
+</tr>
+<tr class="rowStyle02">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top" align="right"> 18,35 D </td>
+</tr>
+<tr class="rowStyle02">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top" align="right"> 11,54 D </td>
+</tr>
+<tr class="rowStyle02">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top" align="right"> 31,57 D </td>
+</tr>
+<tr class="rowStyle02">
+<td width="10%" valign="top"></td><td valign="top">COMP VISA ELECTRON    </td><td valign="top" align="right"> 55,11 D </td>
+</tr>
+<tr class="rowStyle01">
+<td width="10%" valign="top"></td><td valign="top">Saldo</td><td valign="top" align="right">557,21 C<td>
+</tr>
+</tbody></table>
+</div>
+		
         </div>
 		
                         

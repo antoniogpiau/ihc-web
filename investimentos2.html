@@ -9,7 +9,7 @@
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link href="favicon.ico" rel="icon" type="image/x-icon" />
         
-        <title>Realize um Pagamento</title>
+        <title>Investimentos</title>
     </head>
     
     <body class="container z-depth-5">   
@@ -84,8 +84,8 @@
 							<li><a href="conta.html"><img src="myaccount.png" height="10%" width="10%">&nbsp &nbspHome</a></li>
 							<li><a href="extrato.html"><img src="credit_card.png" height="10%" width="10%">&nbsp &nbspExtratos</a></li>
 							<li><a href="transferencia.html"><img src="transferencia.png" height="10%" width="10%">&nbsp &nbspTransferências</a></li>
-							<li class="active"><a href='pagamento.html'><img src="cifrao.png" height="10%" width="10%">&nbsp &nbsp <span>Pagamentos</span></a></li>
-							<li><a href='investimentos.html'><img src="money_bag.png" height="10%" width="10%">&nbsp &nbsp <span>Investimentos</span></a></li>
+							<li><a href='pagamento.html'><img src="cifrao.png" height="10%" width="10%">&nbsp &nbsp <span>Pagamentos</span></a></li>
+							<li class="active"><a href='investimentos.html'><img src="money_bag.png" height="10%" width="10%">&nbsp &nbsp <span>Investimentos</span></a></li>
 							<li><a href='beneficiados.html'><img src="plus.png" height="10%" width="10%">&nbsp &nbsp <span>Cadastrar Beneficiados</span></a></li>
 							<li><a href='viagem.html'><img src="viagens.png" height="10%" width="10%">&nbsp &nbsp <span>Marcar Viagem</span></a></li></ul>
 						</div><!-- /.navbar-collapse -->
@@ -99,7 +99,7 @@
               <ul id="slide-out" class="side-nav">
                 <li class="logo">
                     <a href="#">
-                        <img src="images/logo.jpg" alt="Fenasp" width="200" height="70" /> 
+                       <img src="logo.jpg" height="35%" width="35%" class="logo">
                     </a>
                 </li>
 
@@ -133,49 +133,43 @@
              <div class="col s10 m10 l9">
               
                 <div class="texto-inicial">
-                    Realizar Pagamento
+                    Investimentos
                 </div>
                  
                  <div class="texto-inicial-menor">
-                    Escreva o número de um código de barras e realize seu pagamento.
+                    Movimente o seu dinheiro investindo em fundos.
                  </div>
-				 <h6>Código de barras</h6>
-				 <div class="localizador"> 
-				 <form >
-								<input type="text">
-							</form>
-				 
-                 
-				</div>
-				 <h6>Conta de origem</h6>
-				 <div class="localizador"> 
-                
-					<select class="browser-default">
-						<option value="" disabled selected>Escolha aqui</option>
-						<option value="1">Conta Corrente</option>
-						<option value="2">Poupança</option>
-					</select>
-				</div>
-				<h6>Data de Transferência</h6>
-				 <div class="localizador"> 
-                <div class="tipo1">
-					<input type="date" class="datepicker"><a>Hoje</a>
-					<br> <br><form action="pagamento2.html">
-								<input type="submit" value="Revisar Dados">
-							</form>
-				</div>
-				</div>
-				
-				
-				
-				<br>
-				
-		
-		</div>
-				
-				
+				 <br>
+				<form action="investimentos.html">
+	  <div id="conteudo">
+      <div class="row">
+        <div class="input-field col s6">
+          <input disabled value="Ação Energia" id="disabled" type="text" class="validate">
+          <label for="disabled">Fundo</label>
+        </div>
+      </div>
 
+      <label>Valor desejado</label>
+      <div class="row">
+	  
+        <div class="input-field col s4">
+          <input placeholder="Valor (R$)" type="text" class="validate">
+          
+        </div>
 		</div>
+		     
+      <div class="row">
+        <div class="input-field col s12">
+		
+		  <input type="submit" value="Confirmar">
+        </div>
+      </div>
+    </form>
+
+
+
+</div>
+		
         </div>
 		
                         

@@ -13,25 +13,18 @@
     </head>
     
     <body class="container z-depth-5">   
-                    <header>
+                   
+        <header>
                 <nav>
                     <div class="nav-wrapper light-blue accent-4 z-depth-1">
 
                      <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 
                     <a class="brand-logo hide-on-med-and-down" href="#">
-                        Capital Bank
+                        <img src="images/logo.jpg" height="35%" width="35%" class="logo">
                     </a>
                         
                       <ul id="navegacao-desktop" class="right">
-                          
-                        <div class="tooltipped" id="adic" data-position="bottom" data-delay="20">
-                            Produtos
-                        </div>
-                          
-                        <div class="tooltipped" id="adic" data-position="bottom" data-delay="20">
-                            Cartões
-                        </div>
                           
                         <li>
                             <a class="tooltipped" id="adic" data-position="bottom" data-delay="20" data-tooltip="Alterar fonte" href="#">
@@ -45,65 +38,62 @@
                         <li><a class="tooltipped" id="adic" data-position="bottom" data-delay="20" data-tooltip="Trocar idioma" href="#">
                             <i class="mdi-action-language"></i></a>
                         </li>
-                          
-
 
                       </ul>
 
                     </div>
                   </nav>
-            </header>
-        
+            </header>        
         
         <main>
             
-            <section id="welcome-message">
+            <section id="welcome-message" style="margin-top: 20px">
                 <div class="row">
                   <div class="col l8 offset-l2 s8 offset-s2">
-                    <div class="card-panel z-depth-1 red">
-                      <span class="white-text">
-                          <p class="center">Acesse sua conta Fenasp:</p>
-                          
+                    <div class="card-panel z-depth-1 grey">
+                        <span class="white-text" style="font-size: 20px">Acesse a sua conta<br><br>
                             <div class="row">
                                  <div class="col l4 offset-l1 s5 offset-s1 input-field">
-                                    <input id="agencia" type="text"></input>
+                                    <input id="agencia" class="esp" type="text"></input>
                                     <label for="agencia">Agencia</label>
                                  </div>
                           
                                  <div class="col l4 s5 input-field">
-                                    <input id="conta" type="text"></input>
+                                    <input id="conta" class="esp" type="text"></input>
                                     <label for="conta">Conta</label>
                                  </div>
-                        
-                                 <div class="col l2 s12">
+                                 <div class="col l2 s12" style="padding-left: 40px">
                                   <a class="btn waves-effect waves-light" href="conta.html" name="acessar">
                                       Acessar
                                     <i class="mdi-content-send left"></i>
                                   </a>
                                 </div>
-                        
+                        </span>
                             </div>                     
-                      </span>
+                      
                     </div>
                   </div>
                 </div>
             </section>
         
-            <section id="cards">
+            <section id="cards" style="width: 94%">
                 <div class="row">
 
                     <div class="col l4">
                         <article id="card1">
                             <div class="card small z-depth-2">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                  <img class="activator" src="images/office.jpg">
+                                  <img src="images/aposentadoria.jpg" height="200px" />
                                 </div>
 
                                 <div class="card-content">
-                                    <span class="card-title activator grey-text text-darken-4">
-                                      Quer abrir sua própria empresa?
-                                      <i class="mdi-navigation-more-vert right"></i>
-                                    </span>
+                                    <span class="card-title grey-text text-darken-4">
+                                      O Futuro da Aposentadoria
+                                     </span>       
+                              <div class="container" style="font-size: 18px">          
+                            <p>Você sabia que metade das pessoas diz que sua renda não acompanha seus custos de vida?</p>
+                                      </div>
+                                    
 
                                 </div>
 
@@ -113,7 +103,7 @@
                                         <i class="mdi-navigation-close right"></i>
                                     </span>
 
-                                  <p>Here is some more information about it!</p>
+                                
                                 </div>
                             </div>
                         </article>
@@ -123,16 +113,17 @@
                         <article id="card2">
                             <div class="card small z-depth-2">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                  <img class="activator" src="images/office.jpg">
+                                  <img src="images/senha.jpg" height="180px" />
                                 </div>
 
                                 <div class="card-content">
-                                    <span class="card-title activator grey-text text-darken-4">
-                                      Anúncio Aqui 
-                                      <i class="mdi-navigation-more-vert right"></i>
+                                    <span class="card-title grey-text text-darken-4">
+                                      Não use a mesma senha do banco
+                                      
                                     </span>
-
-                                    <p><a href="#">Saiba mais!</a></p>
+                                            <div class="container" style="font-size: 18px">  
+                                    <p>Com a utilização de senhas diferenciadas você aumenta o seu nível de segurança.</p>
+                                    </div>
                                 </div>
 
                                 <div class="card-reveal">
@@ -147,20 +138,22 @@
                         </article>
                     </div>
 
-                    <div class="col l4">
+                    <div class="col l4" >
                         <article id="card3">
                             <div class="card small z-depth-2">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                  <img class="activator" src="images/office.jpg">
+                                  <img src="images/transferencias.jpg" height="150px" />
                                 </div>
 
                                 <div class="card-content">
-                                    <span class="card-title activator grey-text text-darken-4">
-                                      Bla bla bla
-                                      <i class="mdi-navigation-more-vert right"></i>
-                                    </span>
+                                    <span class="card-title grey-text text-darken-4">
+                                      Já cadastrou seus beneficiados?
 
-                                    <p><a href="#">Saiba mais!</a></p>
+                                    </span>
+                                    <div class="container" style="font-size: 18px">  
+                                    <p>Cadastrando-os previamente no site permite que você
+                                        possa fazer transferências pelo site ou pelo nosso aplicativo.</p>
+                                    </div>
                                 </div>
 
                                 <div class="card-reveal">
@@ -179,6 +172,7 @@
             </section>
         
         </main>
+
         <footer class="page-footer light-blue accent-4">
         
           <div class="container">
@@ -186,14 +180,15 @@
               <div class="col l6 s6">
                   
                 <aside class="grey-text text-lighten-2">
-                    <b>Ouvidoria:</b> 6655-4400 <i class="small mdi-communication-call"></i>  
+                    <i class="small mdi-communication-call"></i>  <b>&nbsp Ouvidoria:</b> 6655-4400 
                 </aside>
                   
               </div>
                 
               <div class="links-uteis col l4 offset-l2 s4 offset-s2">
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Sobre nós</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#">Sobre nós</a></li>
+                    <li><a class="grey-text text-lighten-3" href="http://maps.google.com">Agências mais próximas</a></li>
                 </ul>
               </div>
             </div>

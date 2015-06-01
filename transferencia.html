@@ -9,7 +9,8 @@
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link href="favicon.ico" rel="icon" type="image/x-icon" />
         
-        <title>Realize uma transferência</title>
+        <title>Realize uma transferência</title>       
+       
     </head>
     
     <body class="container z-depth-5">   
@@ -21,7 +22,7 @@
                      <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 
                     <a class="brand-logo hide-on-med-and-down" href="#">
-                        <img src="logo.jpg" height="35%" width="35%" class="logo">
+                        <img src="images/logo.jpg" height="35%" width="35%" class="logo">
                     </a>
                         
                       <ul id="navegacao-desktop" class="right">
@@ -81,13 +82,13 @@
 					<nav class="navbar navbar-default" role="navigation">
 						<div class="collapse navbar-collapse navbar-ex1-collapse">
 							<ul class="nav navbar-nav">
-							<li><a href="conta.htmls"><img src="myaccount.png" height="10%" width="10%">&nbsp &nbspHome</a></li>
-							<li><a href="extrato.html"><img src="credit_card.png" height="10%" width="10%">&nbsp &nbspExtratos</a></li>
-							<li class="active"><a href="transferencia.html"><img src="transferencia.png" height="10%" width="10%">&nbsp &nbspTransferências</a></li>
-							<li><a href='pagamento.html'><img src="cifrao.png" height="10%" width="10%">&nbsp &nbsp <span>Pagamentos</span></a></li>
-							<li><a href='investimentos.html'><img src="money_bag.png" height="10%" width="10%">&nbsp &nbsp <span>Investimentos</span></a></li>
-							<li><a href='beneficiados.html'><img src="plus.png" height="10%" width="10%">&nbsp &nbsp <span>Cadastrar Beneficiados</span></a></li>
-							<li><a href='viagem.html'><img src="viagens.png" height="10%" width="10%">&nbsp &nbsp <span>Marcar Viagem</span></a></li></ul>
+							<li><a href="conta.html"><img src="images/myaccount.png" height="10%" width="10%">&nbsp &nbspHome</a></li>
+							<li><a href="extrato.html"><img src="images/credit_card.png" height="10%" width="10%">&nbsp &nbspExtratos</a></li>
+							<li class="active"><a href="transferencia.html"><img src="images/transferencia.png" height="10%" width="10%">&nbsp &nbspTransferências</a></li>
+							<li><a href='pagamento.html'><img src="images/cifrao.png" height="10%" width="10%">&nbsp &nbsp <span>Pagamentos</span></a></li>
+							<li><a href='investimentos.html'><img src="images/money_bag.png" height="10%" width="10%">&nbsp &nbsp <span>Investimentos</span></a></li>
+							<li><a href='beneficiados.html'><img src="images/plus.png" height="10%" width="10%">&nbsp &nbsp <span>Cadastrar Beneficiados</span></a></li>
+							<li><a href='viagem.html'><img src="images/viagens.png" height="10%" width="10%">&nbsp &nbsp <span>Marcar Viagem</span></a></li></ul>
 						</div><!-- /.navbar-collapse -->
 					</nav>
 						</div>
@@ -99,7 +100,7 @@
               <ul id="slide-out" class="side-nav">
                 <li class="logo">
                     <a href="#">
-                        <img src="logo.jpg" height="35%" width="35%" class="logo">
+                        <img src="images/logo.jpg" height="35%" width="35%" class="logo">
                     </a>
                 </li>
 
@@ -164,9 +165,10 @@
 				<h6>Data de Transferência</h6>
 				 <div class="localizador"> 
                 <div class="tipo1">
-					<input type="date" class="datepicker"><a>Hoje</a>
+					<input id="inputHoje" type="date" class="datepicker">
+                    <a id="btnHoje" href="#">Hoje</a>
 					<br> <br><form action="transferencia2.html">
-								<input type="submit" value="Verificar Dados">
+								<input type="submit" class="btn" value="Verificar Dados">
 							</form>
 				</div>
 				</div>
@@ -186,14 +188,15 @@
               <div class="col l6 s6">
                   
                 <aside class="grey-text text-lighten-2">
-                    <b>Ouvidoria:</b> 6655-4400 <i class="small mdi-communication-call"></i>  
+                    <i class="small mdi-communication-call"></i>  <b>&nbsp Ouvidoria:</b> 6655-4400 
                 </aside>
                   
               </div>
                 
               <div class="links-uteis col l4 offset-l2 s4 offset-s2">
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Sobre nós</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#">Sobre nós</a></li>
+                    <li><a class="grey-text text-lighten-3" href="http://maps.google.com">Agências mais próximas</a></li>
                 </ul>
               </div>
             </div>
@@ -207,6 +210,22 @@
           </div>
            
         </footer>
+                
+            <script>
+                
+                Date.prototype.toDateInputValue = (function() {
+                    var local = new Date(this);
+                    local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
+                    return local.toJSON().slice(0,10);
+                });
+            
+                var btnHoje = document.getElementById("btnHoje");
+                
+                btnHoje.onclick = function(e) {                    
+                    document.getElementById("inputHoje").value = new Date().toDateInputValue();
+                };
+                
+            </script>
                 
             <script src="js/jquery-2.1.4.min.js"></script>
             <script src="js/materialize.min.js"></script>
